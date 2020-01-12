@@ -29,9 +29,9 @@ function App() {
       .then(function (response: any) {
         setUrl(response.data[0].url);
 
-        axios.get('https://cat-fact.herokuapp.com/facts/random')
+        axios.get('https://catfact.ninja/fact')
         .then(function (response: any) {
-          setText(response.data.text);
+          setText(response.data.fact);
           setIsLoading(false);
         })
         .catch(function (error: any) {
@@ -52,7 +52,7 @@ function App() {
         <div className="picture">
           <img className="circular--square" src={url} alt="" />
         </div>
-        <p>{text}</p>
+        <p className="quoteText">{text}</p>
         <Button
           isLoading={isLoading}
           onClick={onClick}

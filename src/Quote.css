@@ -67,6 +67,12 @@ a:hover { color: #1c1c1c; text-decoration: underline; }
   height: 200px;
 }
 
+.quoteText {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .picture {
   margin-bottom: 20px;
 }
